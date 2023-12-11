@@ -18,7 +18,7 @@ export default {
     getApi(){
       axios.get(store.apiUrl + "get-projects")
         .then(results=>{
-          store.projects = results.data;
+          store.projects = results.data.data;
           this.isLoaded = true;
         })
     }
