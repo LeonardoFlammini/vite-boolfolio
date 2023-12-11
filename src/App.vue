@@ -1,13 +1,24 @@
 <script >
-  
+import Main from './components/Main.vue';
+  export default {
+    name: 'App',
+    data(){
+      return{
+        
+      }
+    },
+    components:{
+      Main
+    }
+  }
 </script>
 
 <template>
   <div>
-    <h1>Ciao</h1>
+    <Main />
   </div>
 </template>
 
-<style>
+<style lang="scss">
 
 </style>

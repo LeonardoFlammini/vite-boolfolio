@@ -1,0 +1,11 @@
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/700.css';
+@import './partials/utils.scss';
+@import "bootstrap/scss/bootstrap";
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #EEEEEE;
+  height: 100vh;
+}
+
