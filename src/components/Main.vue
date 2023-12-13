@@ -44,7 +44,7 @@ export default {
 </script>
 
 <template>
-  <div class="container-lf">
+  <div class="container-lf my-5">
     <div
       class="d-flex justify-content-center align-items-center"
       v-if="!isLoaded"

@@ -12,6 +12,7 @@ export default {
 
 
 <template>
+  <h1>I miei proggetti</h1>
   <table class="table">
   <thead>
     <tr>
@@ -32,5 +33,8 @@ export default {
 
 
 <style lang="scss">
-
+h1{
+  color: white;
+  font-weight: bold;
+}
 </style>
