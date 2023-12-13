@@ -2,10 +2,12 @@
 import axios from 'axios';
 import { store } from '../data/store';
 import BlogComponent from './BlogComponent.vue';
+import Loader from './Loader.vue'
 export default {
   name: 'Main',
   components:{
-    BlogComponent
+    BlogComponent,
+    Loader
   },
   data(){
     return{
@@ -31,7 +33,13 @@ export default {
 
 <template>
   <div class="container-lf">
-      <BlogComponent />
+    <div
+      class="d-flex justify-content-center align-items-center"
+      v-if="!isLoaded"
+      >
+      <Loader/>
+    </div>
+    <BlogComponent v-else/>
   </div>
 </template>
 
