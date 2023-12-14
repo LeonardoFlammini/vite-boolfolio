@@ -15,7 +15,7 @@ import Main from './components/Main.vue';
 
 <template>
   <div>
-    <Main />
+    <router-view/>
   </div>
 </template>
 

@@ -21,6 +21,7 @@ export default {
   },
   methods:{
     getApi(){
+      this.isLoaded = false;
       axios.get(store.apiUrl + "get-projects")
         .then(results=>{
           store.projects = results.data.data;
@@ -29,6 +30,7 @@ export default {
         })
     },
     callApi(linkUrl){
+      this.isLoaded = false;
       axios.get(linkUrl)
         .then(results=>{
           store.projects = results.data.data;
@@ -64,5 +66,7 @@ export default {
 
 
 <style scoped lang="scss">
-
+.container-lf{
+  min-height: 600px;
+}
 </style>
